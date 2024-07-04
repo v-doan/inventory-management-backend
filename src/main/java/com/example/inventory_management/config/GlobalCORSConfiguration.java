@@ -14,7 +14,7 @@ public class GlobalCORSConfiguration {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("https://inventory-management-backend-f36ec1d11345.herokuapp.com") // Correct URL without trailing slash
+                        .allowedOriginPatterns("https://inventory-management-backend-f36ec1d11345.herokuapp.com")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
                         .allowedHeaders("*")
                         .allowCredentials(true);
