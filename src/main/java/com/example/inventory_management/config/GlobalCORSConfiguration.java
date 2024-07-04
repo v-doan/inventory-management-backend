@@ -9,14 +9,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class GlobalCORSConfiguration {
 
     @Bean
-    public WebMvcConfigurer globalCorsConfigurer() { // Changed bean name
+    public WebMvcConfigurer globalCorsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("*") // Allow all origins
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD") // Allow HTTP methods
-                        .allowedHeaders("*") // Allow all headers
+                        .allowedOrigins("https://https://inventory-management-backend-f36ec1d11345.herokuapp.com/")  // Replace with your Heroku app URL
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
+                        .allowedHeaders("*")
                         .allowCredentials(true);
             }
         };
