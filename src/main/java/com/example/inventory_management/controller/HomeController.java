@@ -8,7 +8,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home() {
-        // This will look for index.html in src/main/resources/static
         return "index";
     }
 }

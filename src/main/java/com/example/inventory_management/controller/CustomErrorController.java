@@ -11,7 +11,6 @@ public class CustomErrorController implements ErrorController {
     @RequestMapping("/error")
     @ResponseBody
     public String handleError() {
-        // Custom error handling logic
         return "An error occurred!";
     }
 }
