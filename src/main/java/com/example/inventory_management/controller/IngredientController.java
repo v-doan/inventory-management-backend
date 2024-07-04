@@ -9,7 +9,7 @@ import com.example.inventory_management.model.Ingredient;
 import java.util.*;
 @RestController
 @RequestMapping("/api/ingredients")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*") // Allows all origins
 public class IngredientController {
 
     @Autowired
