@@ -15,7 +15,7 @@ public class GlobalCORSConfiguration {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("https://inventory-management-backend-f36ec1d11345.herokuapp.com"); // Replace with your frontend domain
+        config.addAllowedOrigin("https://inventory-management-frontend-5e9b43868789.herokuapp.com");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
